@@ -1,0 +1,32 @@
+{
+  "name": "express-middleware-bigpipe",
+  "version": "1.0.0",
+  "description": "a middleware of express, an implementation of bigpipe",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u bdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wssgcg1213/express-middleware-bigpipe.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "bigpipe"
+  ],
+  "author": "Ling.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wssgcg1213/express-middleware-bigpipe/issues"
+  },
+  "homepage": "https://github.com/wssgcg1213/express-middleware-bigpipe#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1",
+    "supertest": "^1.2.0"
+  }
+}

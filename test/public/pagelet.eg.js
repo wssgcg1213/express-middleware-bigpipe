@@ -1,0 +1,1 @@
+__bigpipe_callback__('<h2>this is pagelet</h2>')
