@@ -3,6 +3,8 @@
 
 express' bigpipe Middleware.
 
+[![Build Status](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe.svg?branch=master)](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe)
+
 
 ###usage: 
 
