@@ -5,8 +5,24 @@ express' bigpipe Middleware.
 
 [![Build Status](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe.svg?branch=master)](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe)
 
+##Start
+####Install
+```bash
+npm i express-middleware-bigpipe --save
+```
+####Use in express
+```javascript
+// express code
+var bigpipe = require('express-middleware-bigpipe')
 
-###usage: 
+app.use(bigpipe({
+    basedir: __dirname + '/public/'
+}))
+```
+
+[DEMO](https://github.com/wssgcg1213/express-bigpipe-demo)
+
+##Usage:
 
 本中间件的 namespace 在 res.bigpipe 下, 所有方法都支持链式调用, 输出完成后自动触发```res.end()```结束请求.
 
@@ -34,9 +50,9 @@ This method use template engine to bigpipe a rendered string.
 
 The callback function have an `assign` argument which is a function to assign an obj to render asynclly.
 
-该方法可用的重载: 
+该方法可用的重载:
 
-You can also use this method in the following way: 
+You can also use this method in the following way:
 
 ```render(view, renderObj);```
 
@@ -52,12 +68,12 @@ End the request immediately.
 
 You can also pass a function or string. If it is a func, it will be called before res.end, or if it is a string, it will be passed to `res.end(str)`.
 
-###Demo:
+##Quick Demo:
 
 ```javascript
 var app = require('express')(),
 	bigpipe = require('express-middleware-bigpipe'); // import
-	
+
 //...
 
 // view engine setup
@@ -74,19 +90,19 @@ app.get("/", function(req, res){
          //this is err handle
          console.log('err', err);
      });
-	 
+
 	 res.bigpipe.render('pagelet', {
          text: "this is a rendered data"
-         
+
      }, function(assign) {
          //async coding
-         
+
          setTimeout(function(){
              assign({
                  anotherData: "3000ms 后输出" // render and pipe after 3000ms
              });
          }, 3000);
-         
+
      }).render('pagelet', {
          text: "123321",
          others: "balabala"
@@ -95,9 +111,14 @@ app.get("/", function(req, res){
 });
 ```
 
+##Test
+```bash
+npm test
+```
 
+Use mocha and supertest
 
-By Ling created @ 2015-04-29 21:10:36    
+By Ling created @ 2015-04-29 21:10:36
 [www.zeroling.com](https://www.zeroling.com)
 
 Follow me at https://github.com/wssgcg1213
