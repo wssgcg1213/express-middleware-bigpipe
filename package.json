@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/wssgcg1213/express-middleware-bigpipe#readme",
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^7.1.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "mocha": "^2.5.1",
