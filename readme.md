@@ -1,6 +1,8 @@
 #express-middleware-bigpipe
 -------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wssgcg1213/express-middleware-bigpipe.svg)](https://greenkeeper.io/)
+
 express' bigpipe Middleware.
 
 [![Build Status](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe.svg?branch=master)](https://travis-ci.org/wssgcg1213/express-middleware-bigpipe)
